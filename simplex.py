@@ -21,7 +21,7 @@ def initialTableau():
     objective = []
 
     objectivePattern = re.compile("(min|max) [0-9]+[a-z]+[0-9]+( ((\+)|(\-))[0-9]+[a-z]+[0-9]+)*$")
-    constraintsPattern = re.compile('[0-9]*[a-z]+[0-9]+( (\+|\-)[0-9]*[a-z]+[0-9]+)* (<=|>=) [0-9]+$')
+    constraintsPattern = re.compile("[0-9]*[a-z]+[0-9]+( (\+|\-)[0-9]*[a-z]+[0-9]+)* (<=|>=) [0-9]+$")
 
     objectiveCorrect = False
     while not objectiveCorrect:
